@@ -1,0 +1,22 @@
+{% extends "prospects/base.html" %}
+{% block content %}
+<h2>Lista de Prospectos</h2>
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Correo</th>
+    <th>Teléfono</th>
+    <th>Estatus</th>
+  </tr>
+  {% for p in prospects %}
+  <tr>
+    <td>{{ p.nombre }}</td>
+    <td>{{ p.correo }}</td>
+    <td>{{ p.telefono }}</td>
+    <td>{{ p.estatus }}</td>
+  </tr>
+  {% empty %}
+  <tr><td colspan="4">No hay prospectos registrados.</td></tr>
+  {% endfor %}
+</table>
+{% endblock %}
