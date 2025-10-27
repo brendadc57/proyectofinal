@@ -1,0 +1,41 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Archivos de base de datos locales
+db.sqlite3
+
+# Archivos de configuración del IDE/editor
+.vscode/
+.idea/
+*.swp
+
+# Archivos de logs o temporales
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.tmp
+*.bak
+
+# Archivos de compilación o cache
+*.egg-info/
+dist/
+build/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Carpeta de migraciones vacías
+**/migrations/__pycache__/
+**/migrations/*.pyc
